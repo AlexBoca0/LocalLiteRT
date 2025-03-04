@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LiteRTprova8</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="introduzione">
+        Questa applicazione testa l\'utilizzo di un modello di Intelligenza Artificiale eseguito in locale sui dispositivi mobile, al fine di preservare la privacy dell\'utilizzatore.\n
+        Il modello di esempio è stato addestrato per determinare il rischio di depressione negli studenti universitari.\n
+        Il database originale usato per l\'addestramento prevede un\'età compresa tra i 18 e i 34 anni: a età molto diverse potrebbero corrispondere esiti imprevedibili.\n
+        Inoltre, poiché il modello AI utilizzato è stato addestrato su un set di dati ridotto, i risultati potrebbero essere in ogni caso inesatti.\n
+        ---\n
+        Il download del modello richiede pochi kilobytes. Dopo di che potrai anche spegnere internet, tutto avverrà offline sul tuo dispositivo!
+
+    </string>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity">
+
+    <Button
+        android:id="@+id/quest_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="goToResult"
+        android:text="Procedi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/quest_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genere" />
+
+            <RadioGroup
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/answer1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="0"
+                    android:text="Maschio" />
+
+                <RadioButton
+                    android:id="@+id/answer1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="1"
+                    android:text="Femmina" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Età" />
+
+            <EditText
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pressione accademica (1 bassa, 5 alta)" />
+
+            <SeekBar
+                android:id="@+id/answer3"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soddisfazione degli studi (1 bassa, 5 alta)" />
+
+            <SeekBar
+                android:id="@+id/answer4"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Durata del sonno" />
+
+            <RadioGroup
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/answer5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="0"
+                    android:text="meno di 5 ore" />
+
+                <RadioButton
+                    android:id="@+id/answer5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="1"
+                    android:text="5-6 ore" />
+
+                <RadioButton
+                    android:id="@+id/answer5_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="2"
+                    android:text="7-8 ore" />
+
+                <RadioButton
+                    android:id="@+id/answer5_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="3"
+                    android:text="più di 8 ore" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abitudini alimentari" />
+
+            <RadioGroup
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/answer6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="0"
+                    android:text="Non salutari" />
+
+                <RadioButton
+                    android:id="@+id/answer6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="1"
+                    android:text="Moderate" />
+
+                <RadioButton
+                    android:id="@+id/answer6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="2"
+                    android:text="Salutari" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hai mai avuto pensieri suicidi?" />
+
+            <RadioGroup
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/answer7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="0"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/answer7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="1"
+                    android:text="Sì" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ore di studio giornaliere (0-12)" />
+
+            <SeekBar
+                android:id="@+id/answer8"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="12"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/question9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stress finanziario (1 basso, 5 atlo)" />
+
+            <SeekBar
+                android:id="@+id/answer9"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/question10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hai casi di instabilità mentale in famiglia?" />
+
+            <RadioGroup
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/answer10_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="0"
+                    android:text="No" />
+
+                <RadioButton
+                    android:id="@+id/answer10_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="1"
+                    android:text="Sì" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
